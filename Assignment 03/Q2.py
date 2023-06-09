@@ -9,7 +9,7 @@ file_name="Aditya.txt"
 fp=open(file_name,'w')
 current_size=0
 while(current_size<file_size):
-    random_string=''.join(r.choices(s.ascii_letters+s.digits))
+    random_string=''.join(r.choices(s.ascii_letters))
     fp.write(random_string)
     current_size+=len(random_string)
 
